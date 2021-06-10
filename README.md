@@ -6,7 +6,7 @@ In this project, Amazing Prime Video which is a platform for streaming movies an
 
 ### Purpose
 
-The purpose of this project is help Britta who is a member of the Amazing Prime Video team with creating the clean dataset for the hackathon by refactoring a previously written code. The data sources that we are provided with are in terms of a scrape of Wikipedia for all movies released since 1990, Kaggle  metadata and rating data from the Movie Land's website. Therefore, it is required to construct an automated pipeline that takes in new data from datasets, transforms the dataset into one clean data and finally loads the data into PostgreSQL database by creating one function that takes in the Wikipedia data, Kaggle metadata, and the MovieLens rating data.
+The purpose of this project is help Britta who is a member of the Amazing Prime Video team with creating the clean dataset for the hackathon by refactoring a previously written code. The data sources that are going to be used are in terms of a scrape of Wikipedia for all movies released since 1990, Kaggle  metadata and ratings data from the Movie Land's website. Therefore, it is required to construct an automated pipeline that takes in new data from datasets, transforms the dataset into one clean data and finally loads the data into PostgreSQL database by creating one function that takes in the Wikipedia data, Kaggle metadata, and the MovieLens rating data.
 
 ## Resources
 
@@ -14,7 +14,7 @@ Jupyter Notebook Files: [ETL_function_test.ipynb](ETL_function_test.ipynb), [ETL
 
 ## Results
 
-This section of the report focuses on the extraction of dataset from the required website in CSV and json formats followed by transformation of the dataset into one clean data and finally loading the dataset into SQL table. The results achieved are displayed in forms of Pandas DataFrames.
+This section of the report focuses on the extraction of dataset from the required website in CSV and json formats followed by transformation of the dataset into one clean data and finally loading the dataset into SQL tables. 
 
 ### ETL Function 
 
@@ -34,7 +34,7 @@ In this portion of the project, knowledge of Python, Pandas and ETL process was 
 
 ### Extract and Transform the Wikipedia Data
 
-In this portion of the project extraction and transformation of the Wikipedia data was performed for merging it with the Kaggle metadata. The transformation process was carried using python list comprehension, regular expressions as well as **apply()** and **map()** methods with lambda functions. Furthermore, the **wiki_movies** DataFrame was cleaned by cleaning the box office, budget, release date and running time columns. Figure below displays the cleaned **wiki_movies_df**. As it can be seen, the columns were reduced from **193** to only **23** columns.
+In this portion of the project extraction and transformation of the Wikipedia data was performed for merging it with the Kaggle metadata. The transformation process was carried out using python list comprehensions, regular expressions as well as **apply()** and **map()** methods with lambda functions. Furthermore, the **wiki_movies** DataFrame was cleaned by cleaning the box office, budget, release date and running time columns. Figure below displays the cleaned **wiki_movies_df**. As it can be seen, the columns were reduced from **193** to only **23** columns.
 
 ![The cleaned wiki_movies_df](Resources/wiki_movies_df_clean.png)
 
@@ -45,7 +45,7 @@ Figure below depicts the column names of the wiki_movies_df DataFrame that were 
 
 ### Extract and Transform the Kaggle Data
 
-In this part of the project, the Kaggle metadata and MovieLens rating data were extracted, transformed and were then converted into separate DataFrames. Furthermore, the Kaggle metadata DataFrame was then merged with the Wikipedia movies DataFrame for creating **movies_df** DataFrame. Furthermore, the DataFrame was further filtered by dropping unnecessary columns and filling missing data as illustrated in the figure below.
+In this part of the project, the Kaggle metadata and MovieLens rating data were extracted, transformed and were then converted into separate DataFrames. The Kaggle metadata DataFrame was then merged with the Wikipedia movies DataFrame for creating **movies_df** DataFrame. Furthermore, the DataFrame was further filtered by dropping unnecessary columns and filling missing data as illustrated in the figure below.
 
 ![movies_df](Resources/movies_df.png)
 
