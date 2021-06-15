@@ -14,7 +14,7 @@ Jupyter Notebook Files: [ETL_function_test.ipynb](ETL_function_test.ipynb), [ETL
 
 ## Results
 
-This section of the report focuses on the extraction of dataset from the required website in CSV and json formats followed by transformation of the dataset into one clean data and finally loading the dataset into SQL tables. 
+This section of the report focuses on the extraction of dataset from the required website in CSV and JSON formats followed by transformation of the dataset into one clean data and finally loading the dataset into SQL tables. 
 
 ### ETL Function 
 
@@ -34,7 +34,7 @@ In this portion of the project, knowledge of Python, Pandas and ETL process was 
 
 ### Extract and Transform the Wikipedia Data
 
-In this portion of the project extraction and transformation of the Wikipedia data was performed for merging it with the Kaggle metadata. The transformation process was carried out using python list comprehensions, regular expressions as well as **apply()** and **map()** methods with lambda functions. Furthermore, the **wiki_movies** DataFrame was cleaned by cleaning the box office, budget, release date and running time columns. Figure below displays the cleaned **wiki_movies_df**. As it can be seen, the columns were reduced from **193** to only **23** columns.
+In this portion of the project extraction and transformation of the Wikipedia data was performed for merging it with the Kaggle metadata. The transformation process was carried out using python list comprehensions, regular expressions as well as **apply()** and **map()** methods with lambda functions. Furthermore, the **wiki_movies_df** DataFrame was cleaned by cleaning the box office, budget, release date and running time columns. Figure below displays the cleaned **wiki_movies_df**. As it can be seen, the columns were reduced from **193** to only **23** columns.
 
 ![The cleaned wiki_movies_df](Resources/wiki_movies_df_clean.png)
 
@@ -55,7 +55,7 @@ Lastly, the MovieLens rating data DataFrame was merged with the **movies_df** Da
 
 ### SQL Database
 
-In this portion of the project, the last stage of ETL process in terms of loading the **movies_df** DataFrame and MovieLens ratings into SQL movies database was carried out. This was performed by creating a connection to the PostgreSQL database using SQLAlchemy which is a library that allows communication between python and databases. After adding the **movies_df** DataFrame as **"movies"** and MovieLens rating CSV data as **"ratings"** to SQL database the count query was run on PostgreSQL database for retrieving the number of rows for the movies and ratings tables.
+In this portion of the project, the last stage of ETL process in terms of loading the **movies_df** DataFrame and MovieLens ratings into SQL database was carried out. This was performed by creating a connection to the PostgreSQL database using SQLAlchemy which is a library that allows communication between python and databases. After adding the **movies_df** DataFrame as **"movies"** and MovieLens rating CSV data as **"ratings"** to SQL database the count query was run on PostgreSQL database for retrieving the number of rows for the movies and ratings tables.
 
 ## Summary
 
