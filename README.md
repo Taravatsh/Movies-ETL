@@ -38,7 +38,7 @@ In this portion of the project extraction and transformation of the Wikipedia da
 
 ![The cleaned wiki_movies_df](Resources/wiki_movies_df_clean.png)
 
-Figure below depicts the column names of the wiki_movies_df DataFrame that were added to a list.
+Figure below depicts the column names of the **wiki_movies_df** DataFrame that were added to a list.
 
 ![Columns added to a list for wiki_movies_df](Resources/wiki_movies_columns_to_list.png)
 
@@ -59,7 +59,7 @@ In this portion of the project, the last stage of ETL process in terms of loadin
 
 ## Summary
 
-In conclusion, this project was performed with the use of Python, Pandas, the ETL process and code refactoring. The extraction, transformation and loading process were done successfully and this was confirmed after achieving the number of rows for the movies and ratings tables to be **6,052** and **26,024,289** respectively as shown in figures below.
+In conclusion, this project was performed with the use of Python, Pandas, the ETL process and code refactoring. The extraction, transformation and loading process were done successfully and this was confirmed after achieving the number of rows for the movies and ratings tables to be **6,052** and **26,024,289** respectively as shown in the figures below.
 
 *Movies Query:*
 
