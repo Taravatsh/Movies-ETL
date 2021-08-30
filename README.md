@@ -14,7 +14,7 @@ Jupyter Notebook Files: [ETL_function_test.ipynb](ETL_function_test.ipynb), [ETL
 
 ## Results
 
-This section of the report focuses on the extraction of dataset from the required website in CSV and JSON formats followed by transformation of the dataset into one clean data and finally loading the dataset into SQL tables. 
+This section of the report focuses on the extraction of dataset from the required website in CSV and JSON formats followed by transformation of the dataset into one clean data and finally loading the dataset into SQL database tables. 
 
 ### ETL Function 
 
